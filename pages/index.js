@@ -1,10 +1,12 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
+import {Title, List} from "../styles/index";
 
-
-export default () => <Title>Mastering Next.js</Title>;
-
-const Title = styled.h1`
-    font-size: 50px;
-    color: ${({theme}) => theme.colors.primary};
-`;
+export default function index() {
+  return (
+      <div>
+  <Title>Mastering Next.js</Title>
+  <List>list</List>
+      </div>
+  );
+}
